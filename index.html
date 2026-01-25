@@ -3,96 +3,335 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tudo Sobre Rodas – Mobilidade em Portugal</title>
+    <title>Mobilidade em Portugal</title>
+
     <meta name="description" content="Guia completo sobre mobilidade em Portugal: multas, IUC, inspeção, documentos do veículo e carta de condução.">
+    <meta name="robots" content="index, follow">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header class="header">
-        <div class="container header-content">
-            <div class="logo">
-                <!-- Coloque sua imagem de logo aqui -->
-                <img src="logo.png" alt="Tudo Sobre Rodas">
-                <span>Tudo Sobre Rodas</span>
-            </div>
+<!-- ================= HEADER ================= -->
+<header class="header">
+    <div class="container header-content">
 
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Multas</a></li>
-                    <li><a href="#">IUC</a></li>
-                    <li><a href="#">Inspeção</a></li>
-                    <li><a href="#">Documentos do Veículo</a></li>
-                    <li><a href="#">Carta de Condução</a></li>
-                </ul>
-            </nav>
+        <div class="logo">
+            <img src="logo.png" alt="Mobilidade Portugal">
+            <span>Mobilidade Portugal</span>
         </div>
-    </header>
 
-    <!-- MAIN CONTENT -->
-    <main class="container">
+        <!-- BOTÃO MENU MOBILE -->
+        <button class="menu-toggle" aria-label="Abrir menu" onclick="toggleMenu()">☰</button>
 
-        <!-- HERO / INTRO -->
-        <section class="hero">
-            <h1>Guia de Mobilidade em Portugal</h1>
-            <p>
-                Informações claras e atualizadas sobre veículos, multas, documentos e carta de condução em Portugal.
-                Conteúdo pensado para residentes e imigrantes.
-            </p>
-        </section>
-
-        <!-- ÁREA DE ARTIGO EM DESTAQUE -->
-        <section class="featured">
-            <h2>Artigo em destaque</h2>
-            <div class="card">
-                <h3>Como consultar multas de trânsito em Portugal</h3>
-                <p>Saiba onde e como verificar multas, prazos de pagamento e o que fazer em caso de infração.</p>
-                <a href="#" class="btn">Ler artigo</a>
-            </div>
-        </section>
-
-        <!-- ÚLTIMOS GUIAS -->
-        <section class="guides">
-            <h2>Últimos guias</h2>
-            <div class="grid">
-                <div class="card">O que é o IUC e como pagar</div>
-                <div class="card">Quando fazer a inspeção automóvel</div>
-                <div class="card">Documentos obrigatórios do veículo</div>
-                <div class="card">Como trocar a carta de condução</div>
-            </div>
-        </section>
-
-        <!-- ESPAÇO PARA IMAGENS -->
-        <section class="images">
-            <h2>Imagens e ilustrações</h2>
-            <div class="image-placeholder">Imagem ilustrativa</div>
-        </section>
-
-        <!-- ESPAÇO PARA ANÚNCIOS (ADSENSE) -->
-        <section class="ads">
-            <h2>Publicidade</h2>
-            <div class="ad-placeholder">
-                Espaço reservado para anúncios (Google AdSense)
-            </div>
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container footer-content">
-            <p>© 2026 – Tudo Sobre Rodas | Guia de Mobilidade em Portugal</p>
+        <!-- MENU DESKTOP -->
+        <nav class="menu">
             <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
-                <li><a href="#">Política de Privacidade</a></li>
-                <li><a href="#">Termos de Uso</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="mobilidade-multas.html">Multas</a></li>
+                <li><a href="mobilidade-IUC.html">IUC</a></li>
+                <li><a href="mobilidade-inspecao.html">Inspeção</a></li>
+                <li><a href="mobilidade-documentacao-veiculo.html">Documentos do Veículo</a></li>
+                <li><a href="mobilidade-carta-conducao.html">Carta de Condução</a></li>
             </ul>
-        </div>
-    </footer>
+        </nav>
 
-    <script src="script.js"></script>
+    </div>
+</header>
+
+<!-- ================= MENU MOBILE (SIDEBAR) ================= -->
+<div class="wrapper">
+    <nav id="sidebar">
+
+        <div class="menu-section">
+
+                <details>
+                    <summary>🚨 Multas</summary>
+                    <a href="mobilidade-multas.html">Multas em Portugal</a>
+                    <a href="mobilidade-consultar-multas.html">Consultar multas</a>
+                    <a href="mobilidade-pagar-multa.html">Pagar multa</a>
+                    <a href="mobilidade-recorrer-multa.html">Recorrer multa</a>
+                </details>
+
+                <details>
+                    <summary>💸 IUC</summary>
+                    <a href="mobilidade-IUC.html">O que é o IUC</a>
+                    <a href="mobilidade-IUC-pagar.html">Como pagar</a>
+                    <a href="mobilidade-IUC-atrasado.html">IUC atrasado</a>
+                    <a href="mobilidade-IUC-isencoes.html">Isenções</a>
+                </details>
+
+                <details>
+                    <summary>🔍 Inspeção</summary>
+                    <a href="mobilidade-inspecao.html">Inspeção automóvel</a>
+                    <a href="mobilidade-inspecao-reprovacao.html">Reprovação</a>
+                    <a href="mobilidade-inspecao-prazos.html">Prazos</a>
+                </details>
+
+                <details>
+                    <summary>📄 Documentos do Veículo</summary>
+                    <a href="mobilidade-documentacao-veiculo.html">Documentos obrigatórios</a>
+                    <a href="mobilidade-registo.html">Registo automóvel</a>
+                    <a href="mobilidade-transferencia.html">Transferência</a>
+                    <a href="mobilidade-seguro.html">Seguro obrigatório</a>
+                </details>
+
+                <details>
+                    <summary>🪪 Carta de Condução</summary>
+                    <a href="mobilidade-carta-conducao.html">Carta em Portugal</a>
+                    <a href="mobilidade-troca-carta.html">Trocar carta</a>
+                    <a href="mobilidade-renovar-carta.html">Renovação</a>
+                    <a href="mobilidade-perda-carta.html">Perda da carta</a>
+                </details>
+
+            </details>
+        </div>
+
+    </nav>
+</div>
+
+<main class="container">
+
+    <!-- INTRODUÇÃO / GUIA -->
+    <section class="hero"><br>
+        <h1>Guia de Mobilidade em Portugal</h1>
+<br>
+        <p>
+            O <strong>Mobilidade Portugal</strong> é um guia informativo criado para ajudar
+            residentes e imigrantes a compreender todas as regras relacionadas à
+            mobilidade, condução e regularização de veículos em Portugal.<br><br>
+        </p>
+
+        <p>
+            Aqui reunimos informações atualizadas sobre <strong>multas de trânsito</strong>,
+            <strong>IUC</strong>, <strong>inspeção automóvel</strong>,
+            <strong>documentação do veículo</strong> e
+            <strong>carta de condução</strong>, sempre com linguagem clara,
+            sem termos jurídicos complicados.<br><br>
+        </p>
+
+        <p>
+            O objetivo deste guia é orientar quem conduz em Portugal,
+            explicando prazos, obrigações legais, documentos exigidos e
+            procedimentos oficiais junto aos serviços públicos.
+            Todo o conteúdo é informativo e não comercial.<br>
+        </p>
+    </section>
+
+    <!-- IMAGEM PRINCIPAL -->
+    <div class="image-placeholder">
+        Imagem ilustrativa sobre mobilidade e condução em Portugal
+    </div>
+
+    <!-- ARTIGOS RECENTES -->
+    <section class="featured">
+        <h2>Artigos</h2>
+
+        <div class="grid">
+
+            <!-- ARTIGO 1 -->
+            <article class="card">
+                <img src="imagens/multas-portugal.jpg"
+                     alt="Multas de trânsito em Portugal"
+                     loading="lazy">
+
+                <h3>Como consultar multas de trânsito em Portugal em 2026</h3>
+
+                <p>
+                    Em Portugal, as multas de trânsito podem ser consultadas online
+                    através das plataformas oficiais, permitindo verificar infrações,
+                    valores e prazos de pagamento de forma simples e segura.
+                </p>
+
+                <a href="artigos-consultar-multas-de-transito.html" class="btn">
+                    Ler artigo completo
+                </a>
+            </article>
+
+            <!-- ARTIGO 2 -->
+            <article class="card">
+                <img src="imagens/iuc-portugal.jpg"
+                     alt="IUC Imposto Único de Circulação em Portugal"
+                     loading="lazy">
+
+                <h3>IUC em Portugal: o que é, quem paga e prazos em vigor</h3>
+
+                <p>
+                    O Imposto Único de Circulação (IUC) é obrigatório para todos os
+                    proprietários de veículos registados em Portugal.
+                    O pagamento deve ser feito anualmente dentro do mês de matrícula.
+                </p>
+
+                <a href="artigos-iuc-em-portugal.html" class="btn">
+                    Entender o IUC
+                </a>
+            </article>
+
+            <!-- ARTIGO 3 -->
+            <article class="card">
+                <img src="imagens/inspecao-automovel.jpg"
+                     alt="Inspeção automóvel em Portugal"
+                     loading="lazy">
+
+                <h3>Inspeção automóvel em Portugal: prazos e regras atualizadas</h3>
+
+                <p>
+                    A inspeção periódica obrigatória garante que o veículo cumpre
+                    os requisitos de segurança e ambiente.
+                    Circular sem inspeção válida pode resultar em multa.
+                </p>
+
+                <a href="artigos-inspecao-automovel.html" class="btn">
+                    Ver regras da inspeção
+                </a>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- BLOCO 1 - O QUE ABORDAREMOS -->
+    <section class="content-info"><br><br>
+
+        <h2>O que você encontra no Guia de Mobilidade em Portugal</h2><br>
+
+        <p>
+            A legislação relacionada à mobilidade em Portugal pode gerar muitas dúvidas,
+            especialmente para quem acabou de chegar ao país ou não está habituado
+            às regras de trânsito portuguesas.<br><br>
+        </p>
+
+        <p>
+            Neste guia, abordamos de forma detalhada e atualizada todos os temas
+            essenciais para quem conduz ou possui um veículo em território português,
+            sempre com base nas normas em vigor.<br><br>
+        </p>
+
+        <p>
+            Entre os principais assuntos tratados no <strong>Mobilidade Portugal</strong>,
+            destacam-se:<br><br>
+        </p>
+
+        <ul>
+            <li>Regras e penalizações relacionadas a multas de trânsito</li>
+            <li>Informações completas sobre o Imposto Único de Circulação (IUC)</li>
+            <li>Prazos e procedimentos da inspeção automóvel obrigatória</li>
+            <li>Documentos exigidos para circular legalmente em Portugal</li>
+            <li>Regras da carta de condução portuguesa e estrangeira</li>
+        </ul>
+
+    </section>
+
+    <!-- BLOCO 2 - IMIGRANTES E RESIDENTES -->
+    <section class="content-info"><br><br>
+
+        <h2>Informações claras para residentes e imigrantes</h2><br>
+
+        <p>
+            Portugal é hoje um dos países que mais recebem imigrantes,
+            e muitas das dúvidas estão relacionadas à condução,
+            regularização de veículos e cumprimento das obrigações legais.<br><br>
+        </p>
+
+        <p>
+            Pensando nisso, o Mobilidade Portugal foi desenvolvido
+            para atender tanto cidadãos portugueses quanto
+            imigrantes de diferentes nacionalidades,
+            com explicações simples e diretas.<br><br>
+        </p>
+
+        <p>
+            Sempre que possível, indicamos:<br><br>
+        </p>
+
+        <ul>
+            <li>Entidades oficiais responsáveis por cada procedimento</li>
+            <li>Prazos legais em vigor</li>
+            <li>Cuidados para evitar multas e penalizações</li>
+            <li>Boas práticas para circular em segurança</li>
+        </ul>
+
+    </section>
+
+    
+
+    <!-- BLOCO 4 - CONTEÚDO INFORMATIVO -->
+    <section class="content-info">
+
+        <h2>Conteúdo informativo e sempre atualizado</h2><br>
+
+        <p>
+            Todo o conteúdo publicado neste site tem caráter
+            exclusivamente informativo.
+            Não vendemos serviços, não intermediamos processos
+            e não representamos entidades governamentais.<br><br>
+        </p>
+
+        <p>
+            As informações são revistas periodicamente
+            para garantir que refletem a legislação e
+            os procedimentos atualmente aplicáveis em Portugal.<br><br>
+        </p>
+
+        <p>
+            Caso existam alterações relevantes nas regras,
+            os artigos são atualizados para manter o leitor
+            sempre bem informado.<br><br>
+        </p>
+
+    </section>
+
+    <!-- BLOCO 5 - FECHAMENTO / SEO -->
+    <section class="content-info">
+
+        <h2>Guia essencial para quem conduz em Portugal</h2><br>
+
+        <p>
+            Se você conduz regularmente ou pretende adquirir um veículo,
+            este guia foi criado para ajudar a evitar erros comuns,
+            atrasos em pagamentos e problemas legais.<br><br>
+        </p>
+
+        <p>
+            Navegue pelos artigos, utilize o menu para acessar
+            cada tema específico e mantenha-se informado
+            sobre todas as obrigações relacionadas à mobilidade em Portugal.<br><br>
+        </p>
+
+    </section>
+
+<!-- Últimos guias -->
+<section class="guides">
+    <h2>Últimos guias</h2>
+
+    <div class="grid">
+        <a href="artigos-iuc-em-portugal.html" class="card">O que é o IUC e como pagar</a>
+        <a href="artigos-inspecao-automovel.html" class="card">Quando fazer a inspeção automóvel</a>
+        <a href="artigos-documentos-veiculo.html" class="card">Documentos obrigatórios do veículo</a>
+        <a href="artigos-carta-conducao.html" class="card">Como trocar a carta de condução</a>
+    </div>
+</section>
+
+
+</main>
+
+
+
+    
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="container footer-content">
+        <p>© 2026 – Mobilidade Portugal</p>
+
+        <ul>
+            <li><a href="mobilidade-sobre-nos.html">Sobre</a></li>
+            <li><a href="mobilidade-contato.html">Contato</a></li>
+            <li><a href="mobilidade-politica-de-privacidade.html">Política de Privacidade</a></li>
+            <li><a href="mobilidade-termo-de-uso.html">Termos de Uso</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
