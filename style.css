@@ -39,7 +39,7 @@ img {
 }
 
 /* ==============================
-   HEADER
+   HEADER (estabilizado)
 ============================== */
 .header {
     background-color: #1f7a5a;
@@ -48,30 +48,42 @@ img {
     position: sticky;
     top: 0;
     z-index: 1000;
+
+    /* 🔑 trava altura para não mexer layout */
+    height: 90px;
 }
 
 .header-content {
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 0;
-    flex-wrap: wrap;
+
+    /* 🔑 impede quebra que empurra menu */
+    flex-wrap: nowrap;
 }
 
+/* ==============================
+   LOGO
+============================== */
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+
+    /* 🔑 logo não empurra menu */
+    flex-shrink: 0;
 }
 
 .logo img {
-    width: 45px;
-    height: 45px;
+    max-height: 180px;   /* pode aumentar/diminuir aqui */
+    width: auto;
 }
 
 .logo span {
     font-size: 1.1rem;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 /* ==============================
@@ -80,8 +92,8 @@ img {
 .menu ul {
     list-style: none;
     display: flex;
+    align-items: center;
     gap: 20px;
-    color: white;
 }
 
 .menu ul li a {
@@ -103,6 +115,7 @@ img {
     border: none;
     font-size: 28px;
     cursor: pointer;
+    color: white;
 }
 
 /* ==============================
@@ -118,9 +131,11 @@ img {
     color: #fff;
     padding: 20px;
     position: fixed;
-    top: 75px;
-    left: 0;
-    height: calc(100vh - 75px);
+
+    /* 🔑 acompanha altura do header */
+    top: 90px;
+    height: calc(100vh - 90px);
+
     overflow-y: auto;
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
@@ -206,7 +221,6 @@ main {
     object-fit: cover;
 }
 
-
 /* ==============================
    SEÇÕES / CARDS
 ============================== */
@@ -224,8 +238,8 @@ main {
 
 .card img {
     width: 100%;
-    height: 180px;          
-    object-fit: cover;       
+    height: 180px;
+    object-fit: cover;
     border-radius: 5px;
     margin-bottom: 12px;
     display: block;
@@ -294,7 +308,7 @@ main {
 }
 
 /* ==============================
-   RESPONSIVO
+   RESPONSIVO (INALTERADO)
 ============================== */
 @media (max-width: 768px) {
 
