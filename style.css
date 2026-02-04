@@ -107,6 +107,50 @@ img {
 }
 
 /* ==============================
+   SUBMENU DESKTOP
+============================== */
+.menu ul li {
+    position: relative;
+}
+
+/* submenu escondido */
+.menu .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1f7a5a;
+    min-width: 220px;
+    padding: 10px 0;
+    border-radius: 6px;
+    z-index: 9999;
+}
+
+/* itens do submenu */
+.menu .submenu li {
+    padding: 0;
+}
+
+.menu .submenu li a {
+    display: block;
+    padding: 8px 16px;
+    color: #ffffff;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+.menu .submenu li a:hover {
+    background-color: #16634a;
+    color: #eeff00;
+}
+
+/* abre submenu no hover */
+.menu ul li.has-submenu:hover .submenu {
+    display: block;
+}
+
+
+/* ==============================
    BOTÃO MENU MOBILE
 ============================== */
 .menu-toggle {
