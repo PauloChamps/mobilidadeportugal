@@ -15,8 +15,7 @@
 
     <!-- ================= SEO ================= -->
     <link rel="canonical" href="https://www.mobilidadeportugal.pt/artigos-iuc-em-portugal.html">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
-     crossorigin="anonymous"></script>
+ 
     <!-- ================= OPEN GRAPH ================= -->
     <meta property="og:type" content="article">
     <meta property="og:site_name" content="Mobilidade Portugal">
@@ -67,20 +66,72 @@
       "inLanguage": "pt-PT"
     }
     </script>
+        <!-- ================= GOOGLE ADSENSE ================= -->
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
+     crossorigin="anonymous"></script>
+
+<!-- Google Consent Mode --> 
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+
+  // 🔴 Importante: inicia NEGADO (RGPD)
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied',
+    'wait_for_update': 500
+  });
+
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
 </head>
 
 <body>
+
+<!-- ================= COOKIE BANNER ================= -->
+<div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-content">
+    <div class="cookie-text">
+      Preocupamo-nos com a sua privacidade. Este site utiliza cookies para melhorar a experiência e exibir anúncios.
+      Pode aceitar tudo, aceitar apenas os cookies necessários ou definir as suas preferências.
+      <br><br>
+      <a href="politica-de-privacidade.html" style="color:#fff;text-decoration:underline;">Política de Cookies / Privacidade</a>
+    </div>
+    <div class="cookie-buttons">
+      <button id="accept-all">Aceitar Tudo</button>
+      <button id="accept-necessary">Aceitar Necessários</button>
+      <button id="edit-preferences">Definir Preferências</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal de preferências -->
+<div id="cookie-modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:10000;">
+  <div style="background:#fff;color:#000;max-width:600px;margin:100px auto;padding:20px;border-radius:8px;position:relative;">
+    <h2>Definir Preferências de Cookies</h2>
+    <p>Escolha os tipos de cookies que deseja permitir:</p>
+    <label><input type="checkbox" id="analytics-cookies"> Cookies de análise e estatísticas</label><br>
+    <label><input type="checkbox" id="ads-cookies"> Cookies de publicidade</label><br><br>
+    <button id="save-preferences" style="background:#27ae60;color:#fff;padding:8px 12px;border:none;border-radius:5px;">Guardar Preferências</button>
+    <button id="close-modal" style="background:#c0392b;color:#fff;padding:8px 12px;border:none;border-radius:5px;margin-left:10px;">Fechar</button>
+  </div>
+</div>
 
 <!-- ================= HEADER ================= -->
 <header class="header">
     <div class="container header-content">
 
         <div class="logo">
-    <a href="../index.html" aria-label="Página inicial - Mobilidade Portugal">
-        <img src="../imagens/logo.png" alt="Logo do site Mobilidade Portugal">
+    <a href="../../index.html" aria-label="Página inicial - Mobilidade Portugal">
+        <img src="../../imagens/logo.png" alt="Logo do site Mobilidade Portugal">
     </a>
 </div>
 
+
+        <!-- BOTÃO MENU MOBILE -->
+        <button class="menu-toggle" aria-label="Abrir menu" onclick="toggleMenu()">☰</button>
 
         <!-- BOTÃO MENU MOBILE -->
         <button class="menu-toggle" aria-label="Abrir menu" onclick="toggleMenu()">☰</button>
@@ -92,105 +143,99 @@
         <li class="has-submenu" style="font-weight:bold;">
             Multas
             <ul class="submenu">
-                <li><a href="../multas/mobilidade-multas-multas-em-portugal.html">Multas em Portugal</a></li>
-                <li><a href="../multas/mobilidade-multas-consultar-multas.html">Consultar multas</a></li>
-                <li><a href="../multas/mobilidade-multas-pagar-multa.html">Pagar multa</a></li>
-                <li><a href="../multas/mobilidade-multas-recorrer-multa.html">Recorrer multa</a></li>
-                <li><a href="../multas/mobilidade-multas-pontos-na-carta.html">Pontos na carta</a></li>
-                <li><a href="../multas/mobilidade-multas-excesso-velocidade.html">Excesso de velocidade</a></li>
-                <li><a href="../multas/mobilidade-multas-estacionamento.html">Multas de estacionamento</a></li>
-                <li><a href="../multas/mobilidade-multas-alcool.html">Álcool e drogas</a></li>
-                <li><a href="../multas/mobilidade-multas-tabela-valores.html">Tabela de multas 2026</a></li>
+                <li><a href="../../multas/multas-em-portugal/index.html">Multas em Portugal</a></li>
+                <li><a href="../../multas/consultar-multas/index.html">Consultar multas</a></li>
+                <li><a href="../../multas/pagar-multas/index.html">Pagar multa</a></li>
+                <li><a href="../../multas/recorrer-multas/index.html">Recorrer multa</a></li>
+                <li><a href="../../multas/pontos-na-carta/index.html">Pontos na carta</a></li>
+                <li><a href="../../multas/excesso-de-velocidade/index.html">Excesso de velocidade</a></li>
+                <li><a href="../../multas/multas-de-estacionamento/index.html">Multas de estacionamento</a></li>
+                <li><a href="../../multas/alcool-e-drogas/index.html">Álcool e drogas</a></li>
+                <li><a href="../../multas/tabela-de-multas/index.html">Tabela de multas 2026</a></li>
             </ul>
         </li>
 
         <li class="has-submenu" style="font-weight:bold;">
             IUC
             <ul class="submenu">
-                <li><a href="../iuc/mobilidade-IUC-o-que-e.html">O que é o IUC</a></li>
-                <li><a href="../iuc/mobilidade-IUC-como-pagar.html">Como pagar</a></li>
-                <li><a href="../iuc/mobilidade-IUC-atrasado.html">IUC atrasado</a></li>
-                <li><a href="../iuc/mobilidade-IUC-isencao.html">Isenções</a></li>
-                <li><a href="../iuc/mobilidade-IUC-tabela.html">Tabela do IUC</a></li>
-                <li><a href="../iuc/mobilidade-IUC-importados.html">IUC de carros importados</a></li>
-                <li><a href="../iuc/mobilidade-IUC-eletricos.html">IUC elétricos e híbridos</a></li>
-                <li><a href="../iuc/mobilidade-IUC-simulador.html">Simulador de IUC</a></li>
+                <li><a href="../../iuc/o-que-e/index.html">O que é o IUC</a></li>
+                <li><a href="../../iuc/como-pagar/index.html">Como pagar</a></li>
+                <li><a href="../../iuc/atrasado/index.html">IUC atrasado</a></li>
+                <li><a href="../../iuc/isencao/index.html">Isenções</a></li>
+                <li><a href="../../iuc/tabela/index.html">Tabela do IUC</a></li>
+                <li><a href="../../iuc/importados/index.html">IUC de carros importados</a></li>
+                <li><a href="../../iuc/eletricos/index.html">IUC elétricos e híbridos</a></li>
+                <li><a href="../../iuc/simulador/index.html">Simulador de IUC</a></li>
             </ul>
         </li>
 
         <li class="has-submenu" style="font-weight:bold;">
             Inspeção
             <ul class="submenu">
-                <li><a href="../inspecao/mobilidade-inspecao-automovel.html">Inspeção automóvel</a></li>
-                <li><a href="../inspecao/mobilidade-inspecao-reprovacao.html">Reprovação</a></li>
-                <li><a href="../inspecao/mobilidade-inspecao-prazos.html">Prazos</a></li>
-                <li><a href="../inspecao/mobilidade-inspecao-o-que-reprova.html">O que reprova</a></li>
-                <li><a href="../inspecao/mobilidade-inspecao-custos.html">Quanto custa</a></li>
-                <li><a href="../inspecao/mobilidade-inspecao-atrasada.html">Inspeção atrasada</a></li>
-                <li><a href="../inspecao/mobilidade-inspecao-importados.html">Inspeção de importados</a></li>
+                <li><a href="../../inspecao/automovel/index.html">Inspeção automóvel</a></li>
+                <li><a href="../../inspecao/reprovacao/index.html">Reprovação</a></li>
+                <li><a href="../../inspecao/prazos/index.html">Prazos</a></li>
+                <li><a href="../../inspecao/o-que-reprova/index.html">O que reprova</a></li>
+                <li><a href="../../inspecao/quanto-custa/index.html">Quanto custa</a></li>
+                <li><a href="../../inspecao/atrasada/index.html">Inspeção atrasada</a></li>
+                <li><a href="../../inspecao/importados/index.html">Inspeção de importados</a></li>
             </ul>
         </li>
 
         <li class="has-submenu" style="font-weight:bold;">
             Documentos do Veículo
             <ul class="submenu">
-                <li><a href="../documentacao/mobilidade-documentacao-veiculo-documentos-obrigatorios.html">Documentos obrigatórios</a></li>
-                <li><a href="../documentacao/mobilidade-documentacao-veiculo-registo-automovel.html">Registo automóvel</a></li>
-                <li><a href="../documentacao/mobilidade-documentacao-veiculo-transferencia.html">Transferência</a></li>
-                <li><a href="../documentacao/mobilidade-documentacao-seguro-obrigatorio.html">Seguro obrigatório</a></li>
+                <li><a href="../../documentacao/documentos-obrigatorios/index.html">Documentos obrigatórios</a></li>
+                <li><a href="../../documentacao/registo-automovel/index.html">Registo automóvel</a></li>
+                <li><a href="../../documentacao/transferencia/index.html">Transferência</a></li>
+                <li><a href="../../documentacao/seguro-obrigatorio/index.html">Seguro obrigatório</a></li>
             </ul>
         </li>
 
         <li class="has-submenu" style="font-weight:bold;">
             Carta de Condução
             <ul class="submenu">
-                <li><a href="../carta-conducao/mobilidade-carta-conducao-carta-em-portugal.html">Carta em Portugal</a></li>
-                <li><a href="../carta-conducao/mobilidade-carta-conducao-trocar-carta.html">Trocar carta</a></li>
-                <li><a href="../carta-conducao/mobilidade-carta-conducao-renovacao.html">Renovação</a></li>
-                <li><a href="../carta-conducao/mobilidade-carta-conducao-perda-da-carta.html">Perda da carta</a></li>
-                <li><a href="../carta-conducao/mobilidade-carta-conducao-pontos.html">Sistema de pontos</a></li>
-                <li><a href="../carta-conducao/mobilidade-carta-conducao-suspensa.html">Carta suspensa</a></li>
+                <li><a href="../carta-em-portugal/index.html">Carta em Portugal</a></li>
+                <li><a href="../trocar-carta/index.html">Trocar carta</a></li>
+                <li><a href="../renovacao/index.html">Renovação</a></li>
+                <li><a href="../perda-da-carta/index.html">Perda da carta</a></li>
+                <li><a href="../sistema-de-pontos/index.html">Sistema de pontos</a></li>
+                <li><a href="../carta-de-conducao-suspensa/">Carta suspensa</a></li>
             </ul>
         </li>
 
             <li class="has-submenu" style="font-weight:bold;">
                 Imigrantes
             <ul class="submenu"> 
-                <li><a href="../imigrantes/mobilidade-imigrantes-comprar-carro.html">Comprar carro sendo imigrante</a></li>
-                <li><a href="../imigrantes/mobilidade-imigrantes-carta-estrangeira.html">Carta estrangeira</a></li>
-                <li><a href="../imigrantes/mobilidade-imigrantes-legalizar-carro.html">Legalizar carro importado</a></li>
-                <li><a href="../imigrantes/mobilidade-imigrantes-seguro.html">Seguro para estrangeiros</a></li>
-                <li><a href="../imigrantes/mobilidade-imigrantes-custos.html">Custos para ter carro</a></li>
+                <li><a href="../../imigrantes/comprar-carro/index.html">Comprar carro sendo imigrante</a></li>
+                <li><a href="../../imigrantes/carta-estrangeira/index.html">Carta estrangeira</a></li>
+                <li><a href="../../imigrantes/legalizar-carro/index.html">Legalizar carro importado</a></li>
+                <li><a href="../../imigrantes/seguro/index.html">Seguro para estrangeiros</a></li>
+                <li><a href="../../imigrantes/custos/index.html">Custos para ter carro</a></li>
            </ul>
             </li> 
 
             <li class="has-submenu" style="font-weight:bold;">
                 Compra e Venda
             <ul class="submenu"> 
-                <li><a href="../compra-e-venda/mobilidade-comprar-carro-usado.html">Comprar carro usado</a></li>
-                <li><a href="../compra-e-venda/mobilidade-comprar-carro-novo.html">Comprar carro novo</a></li>
-                <li><a href="../compra-e-venda/mobilidade-vender-carro.html">Vender carro</a></li>
-                <li><a href="../compra-e-venda/mobilidade-cuidados-compra.html">Cuidados na compra</a></li>
+                <li><a href="../../compra-e-venda/comprar-carro-usado/index.html">Comprar carro usado</a></li>
+                <li><a href="../../compra-e-venda/comprar-carro-novo/index.html">Comprar carro novo</a></li>
+                <li><a href="../../compra-e-venda/vender-carro/index.html">Vender carro</a></li>
+                <li><a href="../../compra-e-venda/cuidados-na-compra/index.html">Cuidados na compra</a></li>
          </ul>
             </li> 
 
             <li class="has-submenu" style="font-weight:bold;">
                 Custos & Utilização
             <ul class="submenu"> 
-                <li><a href="../custos-e-utilizacao/mobilidade-custos-manter-carro.html">Quanto custa manter um carro</a></li>
-                <li><a href="../custos-e-utilizacao/mobilidade-combustivel.html">Combustível em Portugal</a></li>
-                <li><a href="../custos-e-utilizacao/mobilidade-portagens.html">Portagens e SCUTs</a></li>
-                <li><a href="../custos-e-utilizacao/mobilidade-estacionamento.html">Estacionamento</a></li>
-                <li><a href="../custos-e-utilizacao/mobilidade-multas-portagens.html">Multas de portagem</a></li>
+                <li><a href="../../custos-e-utilizacao/custos-manter-carro/">Quanto custa manter um carro</a></li>
+                <li><a href="../../custos-e-utilizacao/combustivel/index.html">Combustível em Portugal</a></li>
+                <li><a href="../../custos-e-utilizacao/portagens/index.html">Portagens e SCUTs</a></li>
+                <li><a href="../../custos-e-utilizacao/estacionamento/index.html">Estacionamento</a></li>
             </ul>
             </li> 
-
-
-
     </ul>
 </nav>
-
-
     </div>
 </header>
 
@@ -205,102 +250,102 @@
                 <span class="menu-title" style="background:#27ae60;color:#fff;padding:10px 12px;border-radius:6px;font-weight:bold;">
         🚨 Multas
     </span>
-                <a href="../multas/mobilidade-multas-multas-em-portugal.html">Multas em Portugal</a>
-                <a href="../multas/mobilidade-multas-consultar-multas.html">Consultar multas</a>
-                <a href="../multas/mobilidade-multas-pagar-multa.html">Pagar multa</a>
-                <a href="../multas/mobilidade-multas-recorrer-multa.html">Recorrer multa</a>
-                <a href="../multas/mobilidade-multas-pontos-na-carta.html">Pontos na carta</a>
-                <a href="../multas/mobilidade-multas-excesso-velocidade.html">Excesso de velocidade</a>
-                <a href="../multas/mobilidade-multas-estacionamento.html">Multas de estacionamento</a>
-                <a href="../multas/mobilidade-multas-alcool.html">Álcool e drogas</a>
-                <a href="../multas/mobilidade-multas-tabela-valores.html">Tabela de multas 2026</a>
+                <a href="../../multas/multas-em-portugal/index.html">Multas em Portugal</a>
+                <a href="../../multas/consultar-multas/index.html">Consultar multas</a>
+                <a href="../../multas/pagar-multas/index.html">Pagar multa</a>
+                <a href="../../multas/recorrer-multas/index.html">Recorrer multa</a>
+                <a href="../../multas/pontos-na-carta/index.html">Pontos na carta</a>
+                <a href="../../multas/excesso-de-velocidade/index.html">Excesso de velocidade</a>
+                <a href="../../multas/multas-de-estacionamento/index.html">Multas de estacionamento</a>
+                <a href="../../multas/alcool-e-drogas/index.html">Álcool e drogas</a>
+                <a href="../../multas/tabela-de-multas/index.html">Tabela de multas 2026</a>
             </div>
 
             <!-- IUC -->
             <div class="menu-group">
                 <span class="menu-title" style="background:#27ae60;color:#fff;padding:10px 12px;border-radius:6px;font-weight:bold;">
         💸 IUC</span>
-                <a href="../iuc/mobilidade-IUC-o-que-e.html">O que é o IUC</a>
-                <a href="../iuc/mobilidade-IUC-como-pagar.html">Como pagar</a>
-                <a href="../iuc/mobilidade-IUC-atrasado.html">IUC atrasado</a>
-                <a href="../iuc/mobilidade-IUC-isencao.html">Isenções</a>
-                <a href="../iuc/mobilidade-IUC-tabela.html">Tabela do IUC</a>
-                <a href="../iuc/mobilidade-IUC-importados.html">IUC de carros importados</a>
-                <a href="../iuc/mobilidade-IUC-eletricos.html">IUC elétricos e híbridos</a>
-                <a href="../iuc/mobilidade-IUC-simulador.html">Simulador de IUC</a>
+                <a href="../../iuc/o-que-e/index.html">O que é o IUC</a>
+                <a href="../../iuc/como-pagar/index.html">Como pagar</a>
+                <a href="../../iuc/atrasado/index.html">IUC atrasado</a>
+                <a href="../../iuc/isencao/index.html">Isenções</a>
+                <a href="../../iuc/tabela/index.html">Tabela do IUC</a>
+                <a href="../../iuc/importados/index.html">IUC de carros importados</a>
+                <a href="../../iuc/eletricos/index.html">IUC elétricos e híbridos</a>
+                <a href="../../iuc/simulador/index.html">Simulador de IUC</a>
             </div>
 
             <!-- INSPEÇÃO -->
             <div class="menu-group">
                 <span class="menu-title" style="background:#27ae60;color:#fff;padding:10px 12px;border-radius:6px;font-weight:bold;">
         🔍 Inspeção</span>
-                <a href="../inspecao/mobilidade-inspecao-automovel.html">Inspeção automóvel</a>
-                <a href="../inspecao/mobilidade-inspecao-reprovacao.html">Reprovação</a>
-                <a href="../inspecao/mobilidade-inspecao-prazos.html">Prazos</a>
-                <a href="../inspecao/mobilidade-inspecao-o-que-reprova.html">O que reprova</a>
-                <a href="../inspecao/mobilidade-inspecao-custos.html">Quanto custa</a>
-                <a href="../inspecao/mobilidade-inspecao-atrasada.html">Inspeção atrasada</a>
-                <a href="../inspecao/mobilidade-inspecao-importados.html">Inspeção de importados</a>
+                <a href="../../inspecao/automovel/index.html">Inspeção automóvel</a>
+                <a href="../../inspecao/reprovacao/index.html">Reprovação</a>
+                <a href="../../inspecao/prazos/index.html">Prazos</a>
+                <a href="../../inspecao/o-que-reprova/index.html">O que reprova</a>
+                <a href="../../inspecao/quanto-custa/index.html">Quanto custa</a>
+                <a href="../../inspecao/atrasada/index.html">Inspeção atrasada</a>
+                <a href="../../inspecao/importados/index.html">Inspeção de importados</a>
             </div>
 
             <!-- DOCUMENTOS DO VEÍCULO -->
             <div class="menu-group">
                 <span class="menu-title" style="background:#27ae60;color:#fff;padding:10px 12px;border-radius:6px;font-weight:bold;">
         📄 Documentos do Veículo</span>
-                <a href="../documentacao/mobilidade-documentacao-veiculo-documentos-obrigatorios.html">Documentos obrigatórios</a>
-                <a href="../documentacao/mobilidade-documentacao-veiculo-registo-automovel.html">Registo automóvel</a>
-                <a href="../documentacao/mobilidade-documentacao-veiculo-transferencia.html">Transferência</a>
-                <a href="../documentacao/mobilidade-documentacao-seguro-obrigatorio.html">Seguro obrigatório</a>
+                <a href="../../documentacao/documentos-obrigatorios/index.html">Documentos obrigatórios</a>
+                <a href="../../documentacao/registo-automovel/index.html">Registo automóvel</a>
+                <a href="../../documentacao/transferencia/index.html">Transferência</a>
+                <a href="../../documentacao/seguro-obrigatorio/index.html">Seguro obrigatório</a>
             </div>
 
             <!-- CARTA DE CONDUÇÃO -->
             <div class="menu-group">
                 <span class="menu-title" style="background:#27ae60;color:#fff;padding:10px 12px;border-radius:6px;font-weight:bold;">
         🪪 Carta de Condução</span>
-                <a href="../carta-conducao/mobilidade-carta-conducao-carta-em-portugal.html">Carta em Portugal</a>
-                <a href="../carta-conducao/mobilidade-carta-conducao-trocar-carta.html">Trocar carta</a>
-                <a href="../carta-conducao/mobilidade-carta-conducao-renovacao.html">Renovação</a>
-                <a href="../carta-conducao/mobilidade-carta-conducao-perda-da-carta.html">Perda da carta</a>
-                <a href="../carta-conducao/mobilidade-carta-conducao-pontos.html">Sistema de pontos</a>
-                <a href="../carta-conducao/mobilidade-carta-conducao-suspensa.html">Carta suspensa</a>
+                <a href="../carta-em-portugal/index.html">Carta em Portugal</a>
+                <a href="../trocar-carta/index.html">Trocar carta</a>
+                <a href="../renovacao/index.html">Renovação</a>
+                <a href="../perda-da-carta/index.html">Perda da carta</a>
+                <a href="../sistema-de-pontos/index.html">Sistema de pontos</a>
+                <a href="../carta-de-conducao-suspensa/index.html">Carta suspensa</a>
             </div>
 
             <!-- IMIGRANTES -->
             <div class="menu-group">
                 <span class="menu-title" style="background:#27ae60;color:#fff;padding:10px 12px;border-radius:6px;font-weight:bold;">
         🧳 Imigrantes</span>
-                <a href="../imigrantes/mobilidade-imigrantes-comprar-carro.html">Comprar carro sendo imigrante</a>
-                <a href="../imigrantes/mobilidade-imigrantes-carta-estrangeira.html">Carta estrangeira</a>
-                <a href="../imigrantes/mobilidade-imigrantes-legalizar-carro.html">Legalizar carro importado</a>
-                <a href="../imigrantes/mobilidade-imigrantes-seguro.html">Seguro para estrangeiros</a>
-                <a href="../imigrantes/mobilidade-imigrantes-custos.html">Custos para ter carro</a>
+                <a href="../../imigrantes/comprar-carro/index.html">Comprar carro sendo imigrante</a>
+                <a href="../../imigrantes/carta-estrangeira/index.html">Carta estrangeira</a>
+                <a href="../../imigrantes/legalizar-carro/index.html">Legalizar carro importado</a>
+                <a href="../../imigrantes/seguro/index.html">Seguro para estrangeiros</a>
+                <a href="../../imigrantes/custos/index.html">Custos para ter carro</a>
             </div>
 
             <!-- COMPRA E VENDA -->
             <div class="menu-group">
                 <span class="menu-title" style="background:#27ae60;color:#fff;padding:10px 12px;border-radius:6px;font-weight:bold;">
         🚗 Compra e Venda</span>
-                <a href="../compra-e-venda/mobilidade-comprar-carro-usado.html">Comprar carro usado</a>
-                <a href="../compra-e-venda/mobilidade-comprar-carro-novo.html">Comprar carro novo</a>
-                <a href="../compra-e-venda/mobilidade-vender-carro.html">Vender carro</a>
-                <a href="../compra-e-venda/mobilidade-cuidados-compra.html">Cuidados na compra</a>
+                <a href="../../compra-e-venda/comprar-carro-usado/index.html">Comprar carro usado</a>
+                <a href="../../compra-e-venda/comprar-carro-novo/index.html">Comprar carro novo</a>
+                <a href="../../compra-e-venda/vender-carro/index.html">Vender carro</a>
+                <a href="../../compra-e-venda/cuidados-na-compra/index.html">Cuidados na compra</a>
             </div>
 
             <!-- CUSTOS E UTILIZAÇÃO -->
             <div class="menu-group">
                 <span class="menu-title" style="background:#27ae60;color:#fff;padding:10px 12px;border-radius:6px;font-weight:bold;">
         🛠️ Custos & Utilização</span>
-                <a href="../custos-e-utilizacao/mobilidade-custos-manter-carro.html">Quanto custa manter um carro</a>
-                <a href="../custos-e-utilizacao/mobilidade-combustivel.html">Combustível em Portugal</a>
-                <a href="../custos-e-utilizacao/mobilidade-portagens.html">Portagens e SCUTs</a>
-                <a href="../custos-e-utilizacao/mobilidade-estacionamento.html">Estacionamento</a>
-                <a href="../custos-e-utilizacao/mobilidade-multas-portagens.html">Multas de portagem</a>
+                <a href="../../custos-e-utilizacao/custos-manter-carro/index.html">Quanto custa manter um carro</a>
+                <a href="../../custos-e-utilizacao/combustivel/index.html">Combustível em Portugal</a>
+                <a href="../../custos-e-utilizacao/portagens/index.html">Portagens e SCUTs</a>
+                <a href="../../custos-e-utilizacao/estacionamento/index.html">Estacionamento</a>
             </div>
 
         </div>
 
     </nav>
 </div>
+
 <br>
 
 <main class="container">
@@ -308,66 +353,104 @@
 <!-- CONTEÚDO PRINCIPAL DO ARTIGO -->
     <section class="main-content">
 
-    <h1>IUC em Portugal: o que é, quem paga e prazos em vigor</h1>
+    <h1>IUC em Portugal: o que é, quem paga e quando pagar (guia simples e atualizado)</h1>
 
     <div class="image-wrapper">
         <img src="../IUC.jpg"
-             alt="IUC em Portugal: imposto único de circulação para veículos"
+             alt="Pagamento do IUC em Portugal para veículos registados"
              loading="lazy">
     </div>
 
     <p>
-        O <strong>IUC – Imposto Único de Circulação</strong> é um imposto anual obrigatório
-        aplicado a veículos registados em Portugal. Em 2026, continuam em vigor regras
-        específicas sobre prazos, valores e responsabilidades que todos os proprietários
-        devem conhecer para evitar multas e penalidades.<br><br>
+        Se tem um carro, mota ou qualquer veículo com matrícula em Portugal, há uma obrigação anual que não pode ignorar: o <strong>IUC – Imposto Único de Circulação</strong>.
     </p>
 
     <p>
-        Neste guia atualizado, explicamos de forma clara o que é o IUC, quem deve pagar,
-        quando efetuar o pagamento e quais são as consequências do incumprimento.<br><br>
+        Apesar de ser um imposto comum, ainda gera muitas dúvidas todos os anos — especialmente sobre <strong>quem paga, quanto custa e qual é o prazo correto</strong>. E a verdade é simples: se falhar, vai pagar mais caro.
     </p>
 
-    <h2>O que é o IUC</h2><br>
     <p>
-        O IUC é um imposto anual que incide sobre veículos automóveis, motociclos e outros
-        veículos sujeitos a matrícula em Portugal. O valor é calculado com base em critérios
-        como cilindrada, tipo de combustível, emissões de CO₂ e ano da matrícula.<br><br>
+        Neste guia direto e sem complicações, explicamos tudo o que precisa mesmo de saber para manter o seu veículo legal e evitar multas desnecessárias.
     </p>
 
-    <h2>Quem deve pagar o IUC</h2><br>
+    <h2>O que é o IUC</h2>
+
     <p>
-        O responsável pelo pagamento do IUC é o proprietário do veículo registado nas
-        Finanças. Em casos de leasing ou aluguer de longa duração, a responsabilidade
-        pode variar conforme o contrato.<br><br>
+        O IUC é um imposto obrigatório cobrado todos os anos aos proprietários de veículos em Portugal. Aplica-se a carros, motas e outros veículos com matrícula ativa.
     </p>
 
-    <h2>Prazos e formas de pagamento do IUC</h2><br>
     <p>
-        O pagamento do IUC deve ser efetuado anualmente no mês correspondente à data
-        da matrícula do veículo. O pagamento é feito principalmente através do
-        Portal das Finanças, de forma rápida e segura.<br><br>
+        O valor a pagar não é igual para todos. Ele depende de vários fatores, como:
     </p>
 
-    <h2>Consequências de não pagar o IUC</h2><br>
-    <p>
-        O atraso no pagamento do IUC implica juros de mora, coimas e pode impedir
-        a realização da inspeção periódica obrigatória do veículo.<br><br>
-    </p>
-
-    <h2>Dicas práticas para proprietários de veículos</h2><br>
     <ul>
-        <li>Confirme os dados do veículo no Portal das Finanças;</li>
-        <li>Pague o IUC dentro do prazo da matrícula;</li>
-        <li>Guarde o comprovativo de pagamento;</li>
-        <li>Verifique possíveis isenções aplicáveis em 2026;</li>
-        <li>Atualize a titularidade em caso de venda do veículo.</li><br><br>
+        <li>Tipo de veículo</li>
+        <li>Cilindrada</li>
+        <li>Combustível utilizado</li>
+        <li>Emissões de CO₂</li>
+        <li>Ano da matrícula</li>
     </ul>
 
     <p>
-        Manter o IUC em dia é essencial para circular legalmente em Portugal.
-        Consulte sempre os canais oficiais e acompanhe possíveis alterações
-        legislativas ao longo de 2026.<br><br>
+        Na prática, veículos mais antigos ou mais poluentes tendem a pagar valores diferentes dos mais recentes.
+    </p>
+
+    <h2>Quem tem de pagar o IUC</h2>
+
+    <p>
+        O pagamento é da responsabilidade da pessoa (ou empresa) em nome de quem o veículo está registado nas Finanças.
+    </p>
+
+    <p>
+        Mesmo que não utilize o veículo com frequência, ou que esteja parado, o imposto continua a ser devido enquanto a matrícula estiver ativa.
+    </p>
+
+    <p>
+        Em casos de leasing ou aluguer de longa duração, o responsável pode variar — por isso, vale sempre a pena confirmar o contrato.
+    </p>
+
+    <h2>Quando pagar o IUC</h2>
+
+    <p>
+        Esta é uma das partes mais importantes: <strong>o IUC paga-se no mês da matrícula do veículo</strong>.
+    </p>
+
+    <p>
+        Por exemplo, se o seu carro foi matriculado em junho, deve pagar o imposto todos os anos durante esse mês.
+    </p>
+
+    <p>
+        O pagamento é feito online, através do Portal das Finanças, de forma rápida. Após emitir a referência, pode pagar por multibanco ou outros meios disponíveis.
+    </p>
+
+    <h2>O que acontece se não pagar</h2>
+
+    <p>
+        Ignorar o prazo não compensa. O atraso no pagamento do IUC pode trazer várias consequências:
+    </p>
+
+    <ul>
+        <li>Juros de mora acumulados</li>
+        <li>Coimas aplicadas pelas Finanças</li>
+        <li>Dificuldades em tratar de documentos do veículo</li>
+    </ul>
+
+    <p>
+        Em situações prolongadas, a dívida pode mesmo entrar em processo de execução fiscal.
+    </p>
+
+    <h2>Dicas simples para evitar problemas</h2>
+
+    <ul>
+        <li>Guarde um lembrete com o mês da matrícula</li>
+        <li>Verifique os dados do veículo no Portal das Finanças</li>
+        <li>Pague dentro do prazo para evitar custos extra</li>
+        <li>Guarde sempre o comprovativo</li>
+        <li>Atualize a titularidade se vender o veículo</li>
+    </ul>
+
+    <p>
+        Cumprir com o IUC é simples — e evita dores de cabeça. Com um pequeno cuidado anual, garante que pode circular sem preocupações e sem custos inesperados.
     </p>
 
 </section>
@@ -395,13 +478,57 @@
     <div class="container footer-content">
         <p>© 2026 – Mobilidade Portugal</p>
         <ul>
-            <li><a href="../../mobilidade-sobre-nos.html">Sobre</a></li>
-            <li><a href="../../mobilidade-contato.html">Contato</a></li>
-            <li><a href="../../mobilidade-politica-de-privacidade.html">Política de Privacidade</a></li>
-            <li><a href="../../mobilidade-termo-de-uso.html">Termos de Uso</a></li>
+            <li><a href="../../sobre-nos.html">Sobre</a></li>
+            <li><a href="../../contato.html">Contato</a></li>
+            <li><a href="../../politica-de-privacidade.html">Política de Privacidade</a></li>
+            <li><a href="../../termo-de-uso.html">Termo de Uso</a></li>
         </ul>
     </div>
 </footer>
+
+<!-- ================= COOKIE BANNER ================= -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var banner = document.getElementById('cookie-banner');
+  var modal = document.getElementById('cookie-modal');
+
+  if (!localStorage.getItem('cookieConsent')) {
+    banner.style.display = 'block';
+  }
+
+  function setConsent(ad_storage, analytics_storage) {
+    gtag('consent', 'update', {
+      'ad_storage': ad_storage,
+      'analytics_storage': analytics_storage
+    });
+    localStorage.setItem('cookieConsent', 'true');
+    banner.style.display = 'none';
+    modal.style.display = 'none';
+  }
+
+  document.getElementById('accept-all').addEventListener('click', function() {
+    setConsent('granted', 'granted');
+  });
+
+  document.getElementById('accept-necessary').addEventListener('click', function() {
+    setConsent('denied', 'denied');
+  });
+
+  document.getElementById('edit-preferences').addEventListener('click', function() {
+    modal.style.display = 'block';
+  });
+
+  document.getElementById('save-preferences').addEventListener('click', function() {
+    var analytics = document.getElementById('analytics-cookies').checked ? 'granted' : 'denied';
+    var ads = document.getElementById('ads-cookies').checked ? 'granted' : 'denied';
+    setConsent(ads, analytics);
+  });
+
+  document.getElementById('close-modal').addEventListener('click', function() {
+    modal.style.display = 'none';
+  });
+});
+</script>
 
 <!-- ================= SCRIPT ================= -->
 <script src="../../script.js"></script>

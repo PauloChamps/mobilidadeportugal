@@ -18,8 +18,7 @@
     <meta property="og:description" content="Guia 2026 para imigrantes comprarem carro em Portugal com segurança e documentação correta.">
     <meta property="og:url" content="https://www.mobilidadeportugal.pt/mobilidade-imigrantes-comprar-carro.html">
     <meta property="og:image" content="https://www.mobilidadeportugal.pt/imagens/logo.png">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
-     crossorigin="anonymous"></script>
+ 
     <!-- ================= TWITTER ================= -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Comprar carro sendo imigrante em Portugal (2026)">
@@ -53,9 +52,58 @@
       "inLanguage": "pt-PT"
     }
     </script>
+        <!-- ================= GOOGLE ADSENSE ================= -->
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
+     crossorigin="anonymous"></script>
+
+<!-- Google Consent Mode --> 
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+
+  // 🔴 Importante: inicia NEGADO (RGPD)
+  gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied',
+    'wait_for_update': 500
+  });
+
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
 </head>
 
 <body>
+
+<!-- ================= COOKIE BANNER ================= -->
+<div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-content">
+    <div class="cookie-text">
+      Preocupamo-nos com a sua privacidade. Este site utiliza cookies para melhorar a experiência e exibir anúncios.
+      Pode aceitar tudo, aceitar apenas os cookies necessários ou definir as suas preferências.
+      <br><br>
+      <a href="../../politica-de-privacidade.html" style="color:#fff;text-decoration:underline;">Política de Cookies / Privacidade</a>
+    </div>
+    <div class="cookie-buttons">
+      <button id="accept-all">Aceitar Tudo</button>
+      <button id="accept-necessary">Aceitar Necessários</button>
+      <button id="edit-preferences">Definir Preferências</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal de preferências -->
+<div id="cookie-modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:10000;">
+  <div style="background:#fff;color:#000;max-width:600px;margin:100px auto;padding:20px;border-radius:8px;position:relative;">
+    <h2>Definir Preferências de Cookies</h2>
+    <p>Escolha os tipos de cookies que deseja permitir:</p>
+    <label><input type="checkbox" id="analytics-cookies"> Cookies de análise e estatísticas</label><br>
+    <label><input type="checkbox" id="ads-cookies"> Cookies de publicidade</label><br><br>
+    <button id="save-preferences" style="background:#27ae60;color:#fff;padding:8px 12px;border:none;border-radius:5px;">Guardar Preferências</button>
+    <button id="close-modal" style="background:#c0392b;color:#fff;padding:8px 12px;border:none;border-radius:5px;margin-left:10px;">Fechar</button>
+  </div>
+</div>
 
 <!-- ================= HEADER ================= -->
 <header class="header">
@@ -370,18 +418,64 @@
     </section>
 </main>
 
+<!-- ================= FOOTER ================= -->
 <footer class="footer">
     <div class="container footer-content">
         <p>© 2026 – Mobilidade Portugal</p>
         <ul>
-            <li><a href="../../mobilidade-sobre-nos.html">Sobre</a></li>
-            <li><a href="../../mobilidade-contato.html">Contato</a></li>
-            <li><a href="../../mobilidade-politica-de-privacidade.html">Política de Privacidade</a></li>
-            <li><a href="../../mobilidade-termo-de-uso.html">Termos de Uso</a></li>
+            <li><a href="../../sobre-nos.html">Sobre</a></li>
+            <li><a href="../../contato.html">Contato</a></li>
+            <li><a href="../../politica-de-privacidade.html">Política de Privacidade</a></li>
+            <li><a href="../../termo-de-uso.html">Termo de Uso</a></li>
         </ul>
     </div>
 </footer>
 
+<!-- ================= COOKIE BANNER ================= -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var banner = document.getElementById('cookie-banner');
+  var modal = document.getElementById('cookie-modal');
+
+  if (!localStorage.getItem('cookieConsent')) {
+    banner.style.display = 'block';
+  }
+
+  function setConsent(ad_storage, analytics_storage) {
+    gtag('consent', 'update', {
+      'ad_storage': ad_storage,
+      'analytics_storage': analytics_storage
+    });
+    localStorage.setItem('cookieConsent', 'true');
+    banner.style.display = 'none';
+    modal.style.display = 'none';
+  }
+
+  document.getElementById('accept-all').addEventListener('click', function() {
+    setConsent('granted', 'granted');
+  });
+
+  document.getElementById('accept-necessary').addEventListener('click', function() {
+    setConsent('denied', 'denied');
+  });
+
+  document.getElementById('edit-preferences').addEventListener('click', function() {
+    modal.style.display = 'block';
+  });
+
+  document.getElementById('save-preferences').addEventListener('click', function() {
+    var analytics = document.getElementById('analytics-cookies').checked ? 'granted' : 'denied';
+    var ads = document.getElementById('ads-cookies').checked ? 'granted' : 'denied';
+    setConsent(ads, analytics);
+  });
+
+  document.getElementById('close-modal').addEventListener('click', function() {
+    modal.style.display = 'none';
+  });
+});
+</script>
+
+<!-- ================= SCRIPT ================= -->
 <script src="../../script.js"></script>
 
 </body>
