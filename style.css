@@ -397,3 +397,51 @@ main {
         font-size: 1rem;
     }
 }
+
+
+
+
+
+
+
+
+
+/* ================= COOKIE BANNER ================= */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #1f7a5a;
+  color: #fff;
+  padding: 15px;
+  display: none;
+  z-index: 9999;
+}
+
+.cookie-content {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cookie-buttons button {
+  margin-left: 10px;
+  padding: 8px 14px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#accept-cookies {
+  background: #27ae60;
+  color: #fff;
+}
+
+#reject-cookies {
+  background: #c0392b;
+  color: #fff;
+}
