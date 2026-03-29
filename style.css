@@ -407,16 +407,18 @@ main {
 
 
 /* ================= COOKIE BANNER ================= */
-.cookie-banner {
+ .cookie-banner {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background: #1f7a5a;
+  background: #222;
   color: #fff;
   padding: 15px;
   display: none;
   z-index: 9999;
+  font-size: 14px;
+  text-align: center;
 }
 
 .cookie-content {
@@ -436,12 +438,12 @@ main {
   border-radius: 4px;
 }
 
-#accept-cookies {
+#accept-all, #accept-necessary {
   background: #27ae60;
   color: #fff;
 }
 
-#reject-cookies {
-  background: #c0392b;
+#edit-preferences {
+  background: #2980b9;
   color: #fff;
 }

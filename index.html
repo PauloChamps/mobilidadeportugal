@@ -38,15 +38,17 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- ================= GOOGLE ADSENSE ================= -->
+<!-- Google AdSense -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4434635049222289"
      crossorigin="anonymous"></script>
-    <!-- Google Consent Mode -->
+
+<!-- Google Consent Mode -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
 
-  // 🔴 IMPORTANTE: inicia NEGADO (RGPD)
+  // 🔴 Importante: inicia NEGADO (RGPD)
   gtag('consent', 'default', {
     'ad_storage': 'denied',
     'analytics_storage': 'denied',
@@ -81,24 +83,33 @@
 </head>
 <body>
 
-    <!-- Cookie Banner -->
-<div id="cookie-banner" style="
-position:fixed;
-bottom:0;
-left:0;
-width:100%;
-background:#222;
-color:#fff;
-padding:15px;
-z-index:9999;
-display:none;
-text-align:center;
-font-size:14px;
-">
-  Este site utiliza cookies para melhorar a experiência e exibir anúncios.
-  <br><br>
-  <button id="accept-cookies" style="margin-right:10px;padding:8px 12px;background:#27ae60;color:#fff;border:none;border-radius:5px;">Aceitar</button>
-  <button id="reject-cookies" style="padding:8px 12px;background:#c0392b;color:#fff;border:none;border-radius:5px;">Recusar</button>
+<!-- ================= COOKIE BANNER ================= -->
+<div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-content">
+    <div class="cookie-text">
+      Preocupamo-nos com a sua privacidade. Este site utiliza cookies para melhorar a experiência e exibir anúncios.
+      Pode aceitar tudo, aceitar apenas os cookies necessários ou definir as suas preferências.
+      <br><br>
+      <a href="politica-de-privacidade.html" style="color:#fff;text-decoration:underline;">Política de Cookies / Privacidade</a>
+    </div>
+    <div class="cookie-buttons">
+      <button id="accept-all">Aceitar Tudo</button>
+      <button id="accept-necessary">Aceitar Necessários</button>
+      <button id="edit-preferences">Definir Preferências</button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal de preferências -->
+<div id="cookie-modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:10000;">
+  <div style="background:#fff;color:#000;max-width:600px;margin:100px auto;padding:20px;border-radius:8px;position:relative;">
+    <h2>Definir Preferências de Cookies</h2>
+    <p>Escolha os tipos de cookies que deseja permitir:</p>
+    <label><input type="checkbox" id="analytics-cookies"> Cookies de análise e estatísticas</label><br>
+    <label><input type="checkbox" id="ads-cookies"> Cookies de publicidade</label><br><br>
+    <button id="save-preferences" style="background:#27ae60;color:#fff;padding:8px 12px;border:none;border-radius:5px;">Guardar Preferências</button>
+    <button id="close-modal" style="background:#c0392b;color:#fff;padding:8px 12px;border:none;border-radius:5px;margin-left:10px;">Fechar</button>
+  </div>
 </div>
 
 <!-- ================= HEADER ================= -->
@@ -671,55 +682,45 @@ font-size:14px;
 </script>
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener('DOMContentLoaded', function() {
+  var banner = document.getElementById('cookie-banner');
+  var modal = document.getElementById('cookie-modal');
 
-  const banner = document.getElementById("cookie-banner");
-  const consent = localStorage.getItem("cookieConsent");
-
-  if (!consent) {
-    banner.style.display = "block";
+  if (!localStorage.getItem('cookieConsent')) {
+    banner.style.display = 'block';
   }
 
-  function updateConsent(accepted) {
-
+  function setConsent(ad_storage, analytics_storage) {
     gtag('consent', 'update', {
-      'ad_storage': accepted ? 'granted' : 'denied',
-      'analytics_storage': accepted ? 'granted' : 'denied'
+      'ad_storage': ad_storage,
+      'analytics_storage': analytics_storage
     });
-
-    loadAds(accepted);
+    localStorage.setItem('cookieConsent', 'true');
+    banner.style.display = 'none';
+    modal.style.display = 'none';
   }
 
-  function loadAds(personalized) {
-    const ads = document.querySelectorAll("ins.adsbygoogle");
+  document.getElementById('accept-all').addEventListener('click', function() {
+    setConsent('granted', 'granted');
+  });
 
-    ads.forEach(ad => {
-      if (!personalized) {
-        ad.setAttribute("data-personalized-ads", "0");
-      }
+  document.getElementById('accept-necessary').addEventListener('click', function() {
+    setConsent('denied', 'denied');
+  });
 
-      try {
-        (adsbygoogle = window.adsbygoogle || []).push({});
-      } catch(e) {}
-    });
-  }
+  document.getElementById('edit-preferences').addEventListener('click', function() {
+    modal.style.display = 'block';
+  });
 
-  document.getElementById("accept-cookies").onclick = function () {
-    localStorage.setItem("cookieConsent", "accepted");
-    banner.style.display = "none";
-    updateConsent(true);
-  };
+  document.getElementById('save-preferences').addEventListener('click', function() {
+    var analytics = document.getElementById('analytics-cookies').checked ? 'granted' : 'denied';
+    var ads = document.getElementById('ads-cookies').checked ? 'granted' : 'denied';
+    setConsent(ads, analytics);
+  });
 
-  document.getElementById("reject-cookies").onclick = function () {
-    localStorage.setItem("cookieConsent", "rejected");
-    banner.style.display = "none";
-    updateConsent(false);
-  };
-
-  // Se já decidiu antes
-  if (consent === "accepted") updateConsent(true);
-  if (consent === "rejected") updateConsent(false);
-
+  document.getElementById('close-modal').addEventListener('click', function() {
+    modal.style.display = 'none';
+  });
 });
 </script>
 
